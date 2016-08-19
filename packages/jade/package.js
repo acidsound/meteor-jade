@@ -1,9 +1,9 @@
 Package.describe({
   name: "spectrum:jade",
-  version: "0.5.5",
+  version: "0.5.6",
   summary: "Jade template engine for Meteor /w unicode",
   git: "https://github.com/acidsound/meteor-jade.git",
-  documentation: "../../README.md"
+  documentation: "README.md"
 });
 
 Package.registerBuildPlugin({
@@ -13,10 +13,10 @@ Package.registerBuildPlugin({
     "htmljs@1.0.0",
     "minifiers@1.0.0",
     "spacebars-compiler@1.0.0",
-    "spectrum:jade-compiler@0.5.5"
+    "spectrum:jade-compiler@0.5.6"
   ],
   sources: [
-    "plugin/handler.js",
+    "plugin/handler.js"
   ]
 });
 
@@ -27,7 +27,7 @@ Package.onUse(function (api) {
 Package.onTest(function (api) {
   api.versionsFrom("METEOR@0.9.0");
   api.use("tinytest");
-  api.use(["spectrum:jade@0.5.5", "ui", "underscore", "jquery", "spacebars", "templating"]);
+  api.use(["spectrum:jade@0.5.6", "ui", "underscore", "jquery", "spacebars", "templating"]);
   api.addFiles([
     "tests/match.jade",
     "tests/match.html",
