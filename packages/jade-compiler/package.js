@@ -1,13 +1,13 @@
 Package.describe({
-  name: "dalgard:jade-compiler",
-  version: "0.5.4_1",
-  summary: "Improved Jade compiler for Meteor",
-  git: "https://github.com/dalgard/meteor-jade.git",
+  name: "spectrum:jade-compiler",
+  version: "0.5.5",
+  summary: "Improved Jade(/w unicode support) compiler for Meteor",
+  git: "https://github.com/acidsound/meteor-jade.git",
   documentation: "../../README.md"
 });
 
 Npm.depends({
- jade: "https://github.com/mquandalle/jade/tarball/f3f956fa1031e05f85be7bc7b67f12e9ec80ba37"
+ jade: "https://github.com/acidsound/jade/tarball/f7bafc8430f0a975170a835187c0259af00d68c3"
 });
 
 Package.onUse(function(api) {
@@ -33,6 +33,6 @@ Package.onTest(function (api) {
   api.versionsFrom("METEOR@0.9.0");
   api.use("tinytest");
   api.use("minifiers");
-  api.use("dalgard:jade-compiler@0.5.4_1", "server");
+  api.use("spectrum:jade-compiler@0.5.5", "server");
   api.addFiles(["tests/tests.js"], "server");
 });

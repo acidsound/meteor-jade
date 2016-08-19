@@ -1,7 +1,7 @@
-dalgard:jade 0.5.4
+spectrum:jade 0.5.5
 ==================
 
-This package is a fork of [`mquandalle:jade`](https://github.com/mquandalle/meteor-jade) and will be kept in sync with the original.
+This package is a fork of [`dalgard:jade`](https://github.com/dalgard/meteor-jade) and will be kept in sync with the original.
 
 Hopefully, the two packages can be merged at some point.
 
@@ -90,7 +90,7 @@ So far, I these improvements are fully backwards compatible, since the added syn
 
 
 ## History
-
+- 0.5.5  -  support unicode id and class (@acidsound)
 - 0.5.4  –  Fixed missing @index variable and `Uncaught TypeError: Cannot read property 'nodeType' of undefined`
 - 0.5.3  –  Added tests and fixed corner case with parenthesis syntax
 - 0.5.2  –  Bug fix: Broken multiline component arguments.
